@@ -21,8 +21,8 @@ To build a functioning browser based game that pushes your understanding of Java
 2. The first function, randomiseCards - ensures that the cardData array is sorted randomly, so each time the game is played the cards aren't in the same position on the board.
 
 3. The createCards function, calls the randomiseCards function, returning an array of objects.
-I've then looped over these objects using a forEach and dynamically created the image elements with their relevant src properties, appending them to the board. I've also applied classes to each element to allow me to apply styles to them.
-At the end of the createCards function, I've added an event listener to listen out for each click event on the card. Inside this event listener I toggle styles on the card (to simulate a flip) and run the checkForMatch function, passing in the click event.
+   I've then looped over these objects using a forEach and dynamically created the image elements with their relevant src properties, appending them to the board. I've also applied classes to each element to allow me to apply styles to them.
+   At the end of the createCards function, I've added an event listener to listen out for each click event on the card. Inside this event listener I toggle styles on the card (to simulate a flip) and run the checkForMatch function, passing in the click event.
 
 4. In the checkForMatch function I find the element that was clicked using (e.target) and apply a class of 'flipped' to it. Note this class is not used for styling - purely functional. The cards with a class of 'flipped' are saved in the variable 'flippedCards'. Once flippedCards.length === 2 (i.e. 2 cards have been flipped), do a check to see if their names attributes match.
 
@@ -34,10 +34,10 @@ After each go (whether matched or not) the scoreCount incremements by 1 and the 
 This checkforMatch function will run on every click event until all matches have been found.
 
 5. restartGame function - on the click event, this function randomises the cards ready for a new game. It selects all the cardFace elements with a class of 'face' and also selects all 'card' elements with a class of card.
-Using another forEach, I remove all of the classes applied to the cards, enable the user to once again click on the elements and apply the images and set name attributes to each card.
-I also reset the score count and update the display, ready to play the game again.
+   Using another forEach, I remove all of the classes applied to the cards, enable the user to once again click on the elements and apply the images and set name attributes to each card.
+   I also reset the score count and update the display, ready to play the game again.
 
-### Requirements: <br/>
+## Requirements: <br/>
 
 - Pseudocode - break down your approach.
 - Public repo with at least 15 Git commits.
@@ -46,6 +46,6 @@ I also reset the score count and update the display, ready to play the game agai
 - Mobile first, responsive design.
 - Linked to your portfolio.
 
+## Next Steps: <br/>
 
-### Next Steps: <br/>
 - Add in a timer to the game
