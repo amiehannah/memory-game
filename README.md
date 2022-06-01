@@ -1,6 +1,8 @@
-# Task: <br/>
+# Memory Game
 
-To build a functioning browser based game that pushes your understanding of JavaScript.
+> _To build a functioning browser based game that pushes your understanding of JavaScript._ </br>
+
+#### Project Link [_here_](https://amiehannah.github.io/memory-game/).
 
 ## Approach: <br/>
 
