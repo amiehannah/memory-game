@@ -39,15 +39,20 @@ This checkforMatch function will run on every click event until all matches have
    Using another forEach, I remove all of the classes applied to the cards, enable the user to once again click on the elements and apply the images and set name attributes to each card.
    I also reset the score count and update the display, ready to play the game again.
 
-## Requirements: <br/>
 
-- Pseudocode - break down your approach.
-- Public repo with at least 15 Git commits.
-- JS code formatted as functions or classes.
-- Use click and keypress events to trigger the events within the game, avoiding using refresh to start the game again.
-- Mobile first, responsive design.
-- Linked to your portfolio.
+## Technologies & Features:
 
-## Next Steps: <br/>
+- JavaScript
+- HTML5
+- CSS
+- Mobile first / responsive design
+- UI - created a selection of zodiac signs to use on each card using Adobe Illustrator.
+
+## Further Developments:
 
 - Add in a timer to the game
+
+## Contact
+
+Created by [Amie Edwards](mailto:amie.edwards17@gmail.com)
+
