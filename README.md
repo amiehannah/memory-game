@@ -6,7 +6,7 @@
 
 ##
 
-![Memory Game Design](images/zodiac-memory-game-gif.mov)
+![Memory Game Design](images/gif-mem-game.gif)
 
 ## User Story:
 
