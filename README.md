@@ -10,7 +10,6 @@
   <img src="./images/gif-mem-game.gif" alt="Memory Game gif">
 </p>
 
-
 ## User Story:
 
 - As a player of this game, I want to be able to find all of the matching Zodiac signs, so that I am able to complete the game, in the least number of moves possible.
@@ -34,10 +33,10 @@
    I've then looped over these objects using a forEach and dynamically created the image elements with their relevant src properties, appending them to the board. I've also applied classes to each element to allow me to apply styles to them.
    At the end of the createCards function, I've added an event listener to listen out for each click event on the card. Inside this event listener I toggle styles on the card (to simulate a flip) and run the checkForMatch function, passing in the click event.
 
-4. In the checkForMatch function I find the element that was clicked using (e.target) and apply a class of 'flipped' to it. Note this class is not used for styling - purely functional. The cards with a class of 'flipped' are saved in the variable 'flippedCards'. Once flippedCards.length === 2 (i.e. 2 cards have been flipped), do a check to see if their names attributes match.
+4. In the checkForMatch function I find the element that was clicked using `e.target` and apply a class of 'flipped' to it. Note this class is not used for styling - purely functional. The cards with a class of 'flipped' are saved in the variable 'flippedCards'. Once flippedCards.length === 2 **_(i.e. 2 cards have been flipped)_**, do a check to see if their names attributes match.
 
-If a match is found, I remove the class of 'flipped', add a class of 'matched' and prevent further clicks on the card by setting the pointerEvent to 'none'.
-I've then created a variable called 'matchedCards' which selects all elements with a class of 'matched'. Once matchedCards.length is equal to 16 (i.e. all elements on the board have been found) create an alert popup after 500ms.
+If a match is found, I remove the class of **_'flipped'_**, add a class of **_'matched'_** and prevent further clicks on the card by setting the pointerEvent to 'none'.
+I've then created a variable called 'matchedCards' which selects all elements with a class of 'matched'. Once matchedCards.length is equal to 16 (i.e. all elements on the board have been found) create an alert popup.
 
 Else if no match is found, I remove the 'flipped' class on the card and after 750ms I remove the 'toggleCard' class ready to check the next two cards that are selected.
 After each go (whether matched or not) the scoreCount incremements by 1 and the display is updated.
