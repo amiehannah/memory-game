@@ -1,22 +1,26 @@
 # Memory Game
 
-> _To build a functioning browser based game that pushes your understanding of JavaScript._ </br>
+> _To build a functioning browser based game that pushes your understanding of JavaScript. I chose to recreate the matching pairs / memory game_ </br>
 
 #### Project Link [_here_](https://amiehannah.github.io/memory-game/).
 
-## Approach: <br/>
 
-- I chose to build a matching pairs or memory game
-- The concept of the game is to match all of the Zodiac signs using the least number of moves possible.
+// ADD IN GIF
 
-- Breaking down the problem --> (pseudocode)
-- At the start of the game the cards values are hidden
-- The game begins when the user clicks on a card
-- The first card is flipped to reveal the image underneath, the second card is then selected.
-- They are compared to see if they match - if they successfully match the cards remain face up, if no match is found, the cards flip back over and the check for match process starts again.
-- After each check-for-match, the moves count is incremented by 1 point.
-- Once all of the pairs have been matched, alert the user.
-- To restart the game (without refreshing the page) user can click on the restart button.
+
+## User Story:
+- As a player of this game, I want to be able to find all of the matching Zodiac signs, so that I am able to complete the game, in the least number of moves possible.
+
+- Given that the game is about to start, the game board should begin with all card values hidden (all Zodiac signs should be hidden away from the player).
+- Given that the game has begun and the player selects a card on the gameboard, then the card display should change, simulating a flip effect to reveal the hidden Zodiac sign underneath. 
+- Given that the player has made the first move on the board, the "moves" counter should begin and will continue to increment by one on each move that the player makes until either scenario - all matching pairs have been found or the game is restarted.
+- Given that only once card is selected, then the cards can't be compared for a match. The player needs to select two cards consecutively in order to check for a match.
+- Given that the player has selected two cards at random and the Zodiac signs successfully match, the cards remain face up and the player can then continue to search for matching pairs.
+- Given that the player has selected two cards at random and the Zodiac signs do not match, the cards flip back over and the check for match process starts again. 
+- Given that the game is in progress, when the player clicks on the restart game button, the gameboard should reset. The cards should be flipped over once again, hiding the values underneath, the sequence of cards on the board should be randomised and the moves counter should return to 0, to allow the user to start the game afresh. 
+- Given that the player has found all of the matching Zodiac pairs on the board, alert the player that all matches have been found and how many moves it has taken to complete the game.
+
+## Functionality:
 
 1. Started by storing the data in a function that returns an array of objects, with their relevant names and image paths. All png images I will be using for the cards are saved in an image folder, where their relevant paths match those in the array of objects.
 
@@ -50,7 +54,7 @@ This checkforMatch function will run on every click event until all matches have
 
 ## Further Developments:
 
-- Add in a timer to the game
+- Add in a timer to the game, so alongside the move counter, the user is able to see how fast they can find all of the matching pairs.
 
 ## Contact
 
