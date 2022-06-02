@@ -6,7 +6,10 @@
 
 ##
 
-![Memory Game Design](images/gif-mem-game.gif)
+<p align="center">
+  <img src="./images/gif-mem-game.gif" alt="Memory Game gif">
+</p>
+
 
 ## User Story:
 
