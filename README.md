@@ -65,7 +65,7 @@ const getCardArray = () => [
 - `element.addEventListener()`
 - `element.setAttribute()`
 - `element.getAttribute()`
-- `element.classList.add, remove & toggle`
+- `element.classList.add(), remove() & toggle()`
 
 ## Technologies & Features:
 
