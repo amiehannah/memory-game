@@ -1,6 +1,6 @@
 # Memory Game
 
-> _Tasked with building a functioning browser based game, I decided to recreate the matching pairs / memory game. It features a selection of Zodiac signs, laid out in a 4x4 grid for the player to try and find all the matching pairs._ </br>
+> _Tasked with building a functioning browser based game, I decided to recreate the matching pairs / memory game. It features a selection of Zodiac signs, laid out in a 4x4 grid for the player to try and locate all of the matching pairs in the least number of moves possible._ </br>
 
 #### Project Link [_here_](https://amiehannah.github.io/memory-game/).
 
