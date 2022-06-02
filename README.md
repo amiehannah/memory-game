@@ -4,20 +4,21 @@
 
 #### Project Link [_here_](https://amiehannah.github.io/memory-game/).
 
+##
 
-// ADD IN GIF
-
+![Memory Game Design](images/zodiac-memory-game-gif.mov)
 
 ## User Story:
+
 - As a player of this game, I want to be able to find all of the matching Zodiac signs, so that I am able to complete the game, in the least number of moves possible.
 
 - Given that the game is about to start, the game board should begin with all card values hidden (all Zodiac signs should be hidden away from the player).
-- Given that the game has begun and the player selects a card on the gameboard, then the card display should change, simulating a flip effect to reveal the hidden Zodiac sign underneath. 
+- Given that the game has begun and the player selects a card on the gameboard, then the card display should change, simulating a flip effect to reveal the hidden Zodiac sign underneath.
 - Given that the player has made the first move on the board, the "moves" counter should begin and will continue to increment by one on each move that the player makes until either scenario - all matching pairs have been found or the game is restarted.
 - Given that only once card is selected, then the cards can't be compared for a match. The player needs to select two cards consecutively in order to check for a match.
 - Given that the player has selected two cards at random and the Zodiac signs successfully match, the cards remain face up and the player can then continue to search for matching pairs.
-- Given that the player has selected two cards at random and the Zodiac signs do not match, the cards flip back over and the check for match process starts again. 
-- Given that the game is in progress, when the player clicks on the restart game button, the gameboard should reset. The cards should be flipped over once again, hiding the values underneath, the sequence of cards on the board should be randomised and the moves counter should return to 0, to allow the user to start the game afresh. 
+- Given that the player has selected two cards at random and the Zodiac signs do not match, the cards flip back over and the check for match process starts again.
+- Given that the game is in progress, when the player clicks on the restart game button, the gameboard should reset. The cards should be flipped over once again, hiding the values underneath, the sequence of cards on the board should be randomised and the moves counter should return to 0, to allow the user to start the game afresh.
 - Given that the player has found all of the matching Zodiac pairs on the board, alert the player that all matches have been found and how many moves it has taken to complete the game.
 
 ## Functionality:
@@ -43,7 +44,6 @@ This checkforMatch function will run on every click event until all matches have
    Using another forEach, I remove all of the classes applied to the cards, enable the user to once again click on the elements and apply the images and set name attributes to each card.
    I also reset the score count and update the display, ready to play the game again.
 
-
 ## Technologies & Features:
 
 - JavaScript
@@ -59,4 +59,3 @@ This checkforMatch function will run on every click event until all matches have
 ## Contact
 
 Created by [Amie Edwards](mailto:amie.edwards17@gmail.com)
-
