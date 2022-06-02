@@ -1,6 +1,6 @@
 # Memory Game
 
-> _To build a functioning browser based game that pushes your understanding of JavaScript. I decided to recreate the matching pairs / memory game_ </br>
+> _Tasked with building a functioning browser based game, intended to push my understanding of JavaScript - I decided to recreate the matching pairs / memory game, using a selection of Zodiac signs as the images to match._ </br>
 
 #### Project Link [_here_](https://amiehannah.github.io/memory-game/).
 
