@@ -1,6 +1,6 @@
 # Memory Game
 
-> _To build a functioning browser based game that pushes your understanding of JavaScript. I chose to recreate the matching pairs / memory game_ </br>
+> _To build a functioning browser based game that pushes your understanding of JavaScript. I decided to recreate the matching pairs / memory game_ </br>
 
 #### Project Link [_here_](https://amiehannah.github.io/memory-game/).
 
@@ -25,26 +25,49 @@
 
 ## Functionality:
 
-1. Started by storing the data in a function that returns an array of objects, with their relevant names and image paths. All png images I will be using for the cards are saved in an image folder, where their relevant paths match those in the array of objects.
+1. Began by storing the data in a function that returns an array of objects, with their relevant names and image paths. All png images I will be using for the cards are saved in an image folder, where their relevant paths match those in the array of objects.
 
-2. The first function, randomiseCards - ensures that the cardData array is sorted randomly, so each time the game is played the cards aren't in the same position on the board.
+```javascript
+const getCardArray = () => [
+  { name: "aries", imgSrc: "./images/aries.png" },
+  { name: "cancer", imgSrc: "./images/cancer.png" },
+  { name: "taurus", imgSrc: "./images/taurus.png" },
+];
+```
+
+2. The first function, randomiseCards - ensures that the cardData array is sorted randomly using `array.sort()` and `Math.random()` built in JS methods. This ensures that each time the game is played the cards aren't in the same position on the board.
 
 3. The createCards function, calls the randomiseCards function, returning an array of objects.
-   I've then looped over these objects using a forEach and dynamically created the image elements with their relevant src properties, appending them to the board. I've also applied classes to each element to allow me to apply styles to them.
-   At the end of the createCards function, I've added an event listener to listen out for each click event on the card. Inside this event listener I toggle styles on the card (to simulate a flip) and run the checkForMatch function, passing in the click event.
+   I've then looped over these objects using a `forEach()` and dynamically created the image elements with their relevant src properties, appending them to the board. I've also applied classes to each element to allow me to apply styles to them.
+   </br>
+   I've also added an event listener to listen out for each click event on the card. Inside this event listener I toggle styles on the card (to simulate a flip) and run the checkForMatch function, passing in the click event `checkForMatch(e)`.
 
-4. In the checkForMatch function I find the element that was clicked using `e.target` and apply a class of 'flipped' to it. Note this class is not used for styling - purely functional. The cards with a class of 'flipped' are saved in the variable 'flippedCards'. Once flippedCards.length === 2 **_(i.e. 2 cards have been flipped)_**, do a check to see if their names attributes match.
+4. In the checkForMatch function I find the element that was clicked using `e.target` and apply a class of **_'flipped'_** to it. Note this class is not used for styling - purely functional. The cards with a class of **_'flipped'_** are saved in the variable **_'flippedCards'_**. Once `flippedCards.length === 2` (i.e. 2 cards have been flipped), check to see if the names attributes match.
+   </br>
+   If a match is found, I remove the class of **_'flipped'_**, add a class of **_'matched'_** and prevent further clicks on the card by setting the pointerEvent to 'none'.
+   I've then created a variable called **_'matchedCards'_** which selects all elements with a class of **_'matched'_**. Once `matchedCards.length === 16` (i.e. all elements on the board have been found) create an alert popup.
 
-If a match is found, I remove the class of **_'flipped'_**, add a class of **_'matched'_** and prevent further clicks on the card by setting the pointerEvent to 'none'.
-I've then created a variable called 'matchedCards' which selects all elements with a class of 'matched'. Once matchedCards.length is equal to 16 (i.e. all elements on the board have been found) create an alert popup.
-
-Else if no match is found, I remove the 'flipped' class on the card and after 750ms I remove the 'toggleCard' class ready to check the next two cards that are selected.
+Else if no match is found, I remove the **_'flipped'_** class on the card and after a delay I remove the **_'toggleCard'_** class ready to check the next two cards that are selected.
 After each go (whether matched or not) the scoreCount incremements by 1 and the display is updated.
 This checkforMatch function will run on every click event until all matches have been found.
 
-5. restartGame function - on the click event, this function randomises the cards ready for a new game. It selects all the cardFace elements with a class of 'face' and also selects all 'card' elements with a class of card.
+5. `restartGame()` - on the click event, this function randomises the cards ready for a new game. It selects all the cardFace elements with a class of 'face' and also selects all 'card' elements with a class of card.
    Using another forEach, I remove all of the classes applied to the cards, enable the user to once again click on the elements and apply the images and set name attributes to each card.
    I also reset the score count and update the display, ready to play the game again.
+
+## Inbuilt JS Methods:
+
+- document.querySelector()
+- document.createElement()
+- document.appendChild()
+- Math.random()
+- array.sort()
+- array.forEach()
+- array.length()
+- element.addEventListener()
+- element.setAttribute()
+- element.getAttribute()
+- element.classList.add, remove & toggle
 
 ## Technologies & Features:
 
