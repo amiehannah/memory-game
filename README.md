@@ -47,7 +47,7 @@ const getCardArray = () => [
    </br> I've then created a variable called **_'matchedCards'_** which selects all elements with a class of **_'matched'_**. Once `matchedCards.length === 16` (i.e. all elements on the board have been found) create an alert popup.
    </br>If no match is found, I remove the **_'flipped'_** class on the card and after a delay I remove the **_'toggleCard'_** class ready to check the next two cards that are selected.
    After each go (whether matched or not) the `scoreCount` incremements by 1 and the display is updated.
-   This checkforMatch function will run on every click event until all matches have been found.
+   This `checkforMatch()` function will run on every click event until all matches have been found.
 
 5. `restartGame()` - on the click event, this function randomises the cards ready for a new game. It selects all the cardFace elements with a class of 'face' and also selects all 'card' elements with a class of card.
    </br>Using another forEach, I remove all of the classes applied to the cards, enable the user to once again click on the elements and apply the images and set name attributes to each card.
@@ -55,17 +55,17 @@ const getCardArray = () => [
 
 ## Inbuilt JS Methods:
 
-- document.querySelector()
-- document.createElement()
-- document.appendChild()
-- Math.random()
-- array.sort()
-- array.forEach()
-- array.length()
-- element.addEventListener()
-- element.setAttribute()
-- element.getAttribute()
-- element.classList.add, remove & toggle
+- `document.querySelector()`
+- `document.createElement()`
+- `document.appendChild()`
+- `Math.random()`
+- `array.sort()`
+- `array.forEach()`
+- `array.length()`
+- `element.addEventListener()`
+- `element.setAttribute()`
+- `element.getAttribute()`
+- `element.classList.add, remove & toggle`
 
 ## Technologies & Features:
 
