@@ -55,6 +55,8 @@ const getCardArray = () => [
 
 ## Inbuilt JS Methods:
 
+The following inbuilt JavaScript methods are used in this codebase:
+
 - `document.querySelector()`
 - `document.createElement()`
 - `document.appendChild()`
