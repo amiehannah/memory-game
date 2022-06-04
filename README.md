@@ -7,7 +7,7 @@
 ##
 
 <p align="center">
-  <img src="./images/gif-mem-game.gif" alt="Memory Game gif">
+  <img src="./images/zodiac-pairs.gif" alt="Memory Game gif">
 </p>
 
 ## User Story:
