@@ -59,6 +59,12 @@ const getCardArray = () => [
    </br>Using another forEach, I remove all of the classes applied to the cards, enable the user to once again click on the elements and apply the images and set name attributes to each card.
    </br>I also reset the score count and update the display, ready to play the game again.
 
+<br/>
+<div align="right">
+    <b><a href="#memory-game"> ^ back to top</a></b>
+</div>
+<br/>
+
 ## Inbuilt JS Methods:
 
 The following inbuilt JavaScript methods are used in this codebase:
