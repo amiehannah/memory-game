@@ -85,3 +85,9 @@ The following inbuilt JavaScript methods are used in this codebase:
 ## Contact
 
 Created by [Amie Edwards](mailto:amie.edwards17@gmail.com)
+
+<br/>
+<div align="right">
+    <b><a href="#memory-game"> ^ back to top</a></b>
+</div>
+<br/>
