@@ -75,6 +75,7 @@ The following inbuilt JavaScript methods are used in this codebase:
 - HTML5
 - CSS
 - Mobile first / responsive design
+- Git Version Control
 - UI - created a selection of zodiac signs to use on each card using Adobe Illustrator.
 
 ## Further Developments:
