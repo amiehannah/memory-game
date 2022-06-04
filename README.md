@@ -23,6 +23,12 @@
 - Given that the game is in progress, when the player clicks on the restart game button, the gameboard should reset. The cards should be flipped over once again, hiding the values underneath, the sequence of cards on the board should be randomised and the moves counter should return to 0, to allow the user to start the game afresh.
 - Given that the player has found all of the matching Zodiac pairs on the board, alert the player that all matches have been found and how many moves it has taken to complete the game.
 
+<br/>
+<div align="right">
+    <b><a href="#memory-game"> ^ back to top</a></b>
+</div>
+<br/>
+
 ## Functionality:
 
 1. Started by storing the data in a function that returns an array of objects, with their relevant names and image paths. All png images I will be using for the cards are saved in an image folder, where their relevant paths match those in the array of objects.
